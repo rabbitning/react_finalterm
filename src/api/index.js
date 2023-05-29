@@ -4,12 +4,12 @@ import { getAuth, signInWithEmailAndPassword, createUserWithEmailAndPassword, in
 import _ from "lodash"
 
 const firebaseConfig = {
-    apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
-    authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
-    projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
-    storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
-    messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
-    appId: import.meta.env.VITE_FIREBASE_APP_ID
+    apiKey: "AIzaSyCv9Qi--92e-I_9npBGZdCex9bO2ggS7jU",
+    authDomain: "react-finalterm-4a5ed.firebaseapp.com",
+    projectId: "react-finalterm-4a5ed",
+    storageBucket: "react-finalterm-4a5ed.appspot.com",
+    messagingSenderId: "824817652271",
+    appId: "1:824817652271:web:cda1a14106a152aa656cda"
 }
 
 const app_length = getApps().length > 0
