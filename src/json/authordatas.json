@@ -1,0 +1,17 @@
+[
+    {
+        "name": "McDonald",
+        "profile": "/images/author-McDonald.png",
+        "email": "McMike6712@gmail.com"
+    },
+    {
+        "name": "Malenia",
+        "profile": "/images/author-Malenia.png",
+        "email": "LetMeSoloHer@fromsoft.com"
+    },
+    {
+        "name": "BLT",
+        "profile": "/images/author-BLT.png",
+        "email": "BerryLarryTerry@gmail.com"
+    }
+]

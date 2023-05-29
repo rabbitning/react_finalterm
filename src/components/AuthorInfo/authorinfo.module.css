@@ -1,0 +1,115 @@
+.authorPage {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+}
+
+.userInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5%;
+}
+
+.userProfile {
+    height: 30vw;
+}
+
+.userName {
+    font-weight: bold;
+    padding: 1vw;
+}
+
+.userArticleList {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+    width: 60%;
+}
+
+.userArticleList::before {
+    position: absolute;
+    left: -3vw;
+    content: '';
+    width: 1px;
+    height: 99%;
+    background-color: var(--contentText);
+}
+
+.userArticle {
+    display: flex;
+    width: 100%;
+    height: 10vw;
+    min-height: 120px;
+    border-radius: 10px;
+    transition: 0.2s;
+    overflow: hidden;
+}
+
+.userArticle:hover {
+    box-shadow: 0 0 15px -5px var(--boxShadow);
+}
+
+.articleThumbnailBox {
+    display: flex;
+    align-items: center;
+    width: 25%;
+    background-color: #faf9e6;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.articleThumbnail {
+    width: 100%;
+}
+
+.articleBox {
+    width: 75%;
+    height: 100%;
+    padding: 1vw;
+}
+
+.articleTitle {
+    height: 50%;
+    font-weight: bold;
+}
+
+.articleContent {
+    height: 50%;
+    overflow: hidden;
+}
+
+@media (max-width: 768px) {
+    .authorPage {
+        flex-direction: column;
+    }
+
+    .userArticleList::before {
+        display: none;
+    }
+
+    .userArticleList {
+        width: 100%;
+    }
+}
+
+@media (max-width: 400px) {
+    .authorPage {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .userProfile {
+        height: 200px;
+    }
+
+    .userArticleList {
+        width: 100%;
+    }
+
+    .userArticle {
+        min-height: 100px;
+    }
+}
